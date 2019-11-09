@@ -12,6 +12,15 @@
 		299FAEF323767C0700E503E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299FAEF123767C0700E503E2 /* Main.storyboard */; };
 		299FAEF523767C0900E503E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299FAEF423767C0900E503E2 /* Assets.xcassets */; };
 		299FAEF823767C0900E503E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299FAEF623767C0900E503E2 /* LaunchScreen.storyboard */; };
+		29C2BB9223769C4E00741F2B /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BB9123769C4E00741F2B /* Emoji.swift */; };
+		29C2BB9423769CB000741F2B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BB9323769CB000741F2B /* User.swift */; };
+		29C2BB9723769F3300741F2B /* CustomBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BB9623769F3300741F2B /* CustomBubble.swift */; };
+		29C2BB9923769F4800741F2B /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BB9823769F4800741F2B /* CustomCollectionView.swift */; };
+		29C2BB9F23769F5800741F2B /* CustomOutgoingTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BB9A23769F5700741F2B /* CustomOutgoingTextCell.swift */; };
+		29C2BBA023769F5800741F2B /* CustomStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BB9B23769F5700741F2B /* CustomStyle.swift */; };
+		29C2BBA123769F5800741F2B /* CustomIncomingTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C2BB9C23769F5700741F2B /* CustomIncomingTextCell.xib */; };
+		29C2BBA223769F5800741F2B /* CustomStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C2BB9D23769F5700741F2B /* CustomStyleViewController.swift */; };
+		29C2BBA323769F5800741F2B /* CustomOutgoingTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C2BB9E23769F5700741F2B /* CustomOutgoingTextCell.xib */; };
 		55515E2FA4B97D2E9F849B90 /* Pods_ChatTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CF26BE5665A10BED97DC0E /* Pods_ChatTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +33,15 @@
 		299FAEF423767C0900E503E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		299FAEF723767C0900E503E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		299FAEF923767C0900E503E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C2BB9123769C4E00741F2B /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		29C2BB9323769CB000741F2B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		29C2BB9623769F3300741F2B /* CustomBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBubble.swift; sourceTree = "<group>"; };
+		29C2BB9823769F4800741F2B /* CustomCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		29C2BB9A23769F5700741F2B /* CustomOutgoingTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOutgoingTextCell.swift; sourceTree = "<group>"; };
+		29C2BB9B23769F5700741F2B /* CustomStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStyle.swift; sourceTree = "<group>"; };
+		29C2BB9C23769F5700741F2B /* CustomIncomingTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomIncomingTextCell.xib; sourceTree = "<group>"; };
+		29C2BB9D23769F5700741F2B /* CustomStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStyleViewController.swift; sourceTree = "<group>"; };
+		29C2BB9E23769F5700741F2B /* CustomOutgoingTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOutgoingTextCell.xib; sourceTree = "<group>"; };
 		42E71F03A72108C2F50277A9 /* Pods-ChatTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatTest.release.xcconfig"; path = "Target Support Files/Pods-ChatTest/Pods-ChatTest.release.xcconfig"; sourceTree = "<group>"; };
 		76716E33746AA472598FC794 /* Pods-ChatTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatTest.debug.xcconfig"; path = "Target Support Files/Pods-ChatTest/Pods-ChatTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,14 +79,39 @@
 		299FAEEC23767C0700E503E2 /* ChatTest */ = {
 			isa = PBXGroup;
 			children = (
+				29C2BB9523769F1400741F2B /* Custom Style */,
+				29C2BB9023769C2E00741F2B /* Exetensions */,
 				299FAEED23767C0700E503E2 /* AppDelegate.swift */,
 				299FAEEF23767C0700E503E2 /* ViewController.swift */,
 				299FAEF123767C0700E503E2 /* Main.storyboard */,
 				299FAEF423767C0900E503E2 /* Assets.xcassets */,
 				299FAEF623767C0900E503E2 /* LaunchScreen.storyboard */,
 				299FAEF923767C0900E503E2 /* Info.plist */,
+				29C2BB9323769CB000741F2B /* User.swift */,
 			);
 			path = ChatTest;
+			sourceTree = "<group>";
+		};
+		29C2BB9023769C2E00741F2B /* Exetensions */ = {
+			isa = PBXGroup;
+			children = (
+				29C2BB9123769C4E00741F2B /* Emoji.swift */,
+			);
+			path = Exetensions;
+			sourceTree = "<group>";
+		};
+		29C2BB9523769F1400741F2B /* Custom Style */ = {
+			isa = PBXGroup;
+			children = (
+				29C2BB9C23769F5700741F2B /* CustomIncomingTextCell.xib */,
+				29C2BB9A23769F5700741F2B /* CustomOutgoingTextCell.swift */,
+				29C2BB9E23769F5700741F2B /* CustomOutgoingTextCell.xib */,
+				29C2BB9B23769F5700741F2B /* CustomStyle.swift */,
+				29C2BB9D23769F5700741F2B /* CustomStyleViewController.swift */,
+				29C2BB9823769F4800741F2B /* CustomCollectionView.swift */,
+				29C2BB9623769F3300741F2B /* CustomBubble.swift */,
+			);
+			path = "Custom Style";
 			sourceTree = "<group>";
 		};
 		39C3E53C0260C50C708DA35C /* Frameworks */ = {
@@ -85,7 +128,6 @@
 				76716E33746AA472598FC794 /* Pods-ChatTest.debug.xcconfig */,
 				42E71F03A72108C2F50277A9 /* Pods-ChatTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,8 +192,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				299FAEF823767C0900E503E2 /* LaunchScreen.storyboard in Resources */,
+				29C2BBA323769F5800741F2B /* CustomOutgoingTextCell.xib in Resources */,
 				299FAEF523767C0900E503E2 /* Assets.xcassets in Resources */,
 				299FAEF323767C0700E503E2 /* Main.storyboard in Resources */,
+				29C2BBA123769F5800741F2B /* CustomIncomingTextCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C2BBA223769F5800741F2B /* CustomStyleViewController.swift in Sources */,
+				29C2BBA023769F5800741F2B /* CustomStyle.swift in Sources */,
+				29C2BB9223769C4E00741F2B /* Emoji.swift in Sources */,
+				29C2BB9723769F3300741F2B /* CustomBubble.swift in Sources */,
+				29C2BB9423769CB000741F2B /* User.swift in Sources */,
+				29C2BB9F23769F5800741F2B /* CustomOutgoingTextCell.swift in Sources */,
+				29C2BB9923769F4800741F2B /* CustomCollectionView.swift in Sources */,
 				299FAEF023767C0700E503E2 /* ViewController.swift in Sources */,
 				299FAEEE23767C0700E503E2 /* AppDelegate.swift in Sources */,
 			);
@@ -367,7 +418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.miroz007.ChatTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -386,7 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.miroz007.ChatTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

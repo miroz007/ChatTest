@@ -1,15 +1,14 @@
 //
-//  MSGTravBubble.swift
-//  MessengerKit
+//  CustomBubble.swift
+//  MessengerKit_Example
 //
-//  Created by Stephen Radford on 08/06/2018.
-//  Copyright © 2018 Cocoon Development Ltd. All rights reserved.
+//  Created by Stephen Radford on 14/06/2018.
+//  Copyright © 2018 CocoaPods. All rights reserved.
 //
 
 import UIKit
 
-/// A bubble for outgoing messages for use in the Travamigos style.
-class MSGTravOutgoingBubble: UITextView {
+class CustomBubble: UITextView {
     
     var gradientLayer = CAGradientLayer()
     
@@ -18,13 +17,6 @@ class MSGTravOutgoingBubble: UITextView {
             UIColor(red:1.00, green:0.30, blue:0.13, alpha:1.00).cgColor,
             UIColor(red:0.89, green:0.08, blue:0.46, alpha:1.00).cgColor
         ]
-    }
-    
-    override public var selectedTextRange: UITextRange? {
-        get {
-            return nil
-        }
-        set { }
     }
     
     override var canBecomeFirstResponder: Bool {
@@ -46,7 +38,6 @@ class MSGTravOutgoingBubble: UITextView {
         setupView()
     }
     
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -56,12 +47,14 @@ class MSGTravOutgoingBubble: UITextView {
         CATransaction.commit()
     }
     
-    
     fileprivate func setupView() {
         
+        backgroundColor = .clear
         
-        layer.cornerRadius = 18
+        layer.cornerRadius = 22
         layer.masksToBounds = true
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.white.cgColor
         
         isEditable = false
         isSelectable = true // TODO: Check that links are tappable
@@ -73,9 +66,10 @@ class MSGTravOutgoingBubble: UITextView {
         textContainerInset = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
         textContainer.lineFragmentPadding = 0
         
-        linkTextAttributes = [NSAttributedString.Key.underlineColor: NSUnderlineStyle.single.rawValue]
+        linkTextAttributes = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single]
         
         addGradientLayer()
+
     }
     
     fileprivate func addGradientLayer() {
@@ -87,6 +81,7 @@ class MSGTravOutgoingBubble: UITextView {
         gradientLayer.frame = layer.bounds
         layer.insertSublayer(gradientLayer, at: 0)
     }
+    
     
     func calculatedSize(in size: CGSize) -> CGSize {
         return sizeThatFits(CGSize(width: size.width - 40, height: .infinity))
@@ -108,5 +103,5 @@ class MSGTravOutgoingBubble: UITextView {
         
         return attributedText.attribute(.link, at: startIndex, effectiveRange: nil) != nil
     }
-    
+
 }

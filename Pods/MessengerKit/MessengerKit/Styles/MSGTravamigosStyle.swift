@@ -39,6 +39,8 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
     
     public var incomingLinkColor: UIColor = UIColor(red:1.00, green:0.30, blue:0.13, alpha:1.00)
     
+ 
+    
     public func size(for message: MSGMessage, in collectionView: UICollectionView) -> CGSize {
         
         var size: CGSize!
@@ -50,6 +52,7 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
             bubble.text = body
             bubble.font = font
             let bubbleSize = bubble.calculatedSize(in: CGSize(width: collectionView.bounds.width, height: .infinity))
+            
             size = CGSize(width: collectionView.bounds.width, height: bubbleSize.height)
             
             break
@@ -73,6 +76,7 @@ public struct MSGTravamigosStyle: MSGMessengerStyle {
     }
     
     // MARK: - Custom Properties
+    
     
     /// Colors for the gradient on outgoing bubbles
     public var outgoingGradient: [CGColor] = [
